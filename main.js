@@ -1,34 +1,35 @@
 function showMenu() {
-    console.log("Hello")
-    var x = document.querySelector(".nav-links");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("active");
 }
 
-    // Add active class to the current button (highlight it)
-    var header = document.querySelector(".nav-links");
-    var btns = header.querySelectorAll(".nav-link");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("active");
-            if (current.length > 0) {
-                current[0].className = current[0].className.replace(" active", "");
-            }
-            this.className += " active";
-        });
-    }
+function resetActive() {
+  const logo = document.querySelector("#logo");
+  logo.addEventListener("click", function () {
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach((link) => link.classList.remove("active"));
+  });
+}
 
-    document.onkeypress = (e) => {
-        e = e || window.event
-        if (e.keyCode == 13) {
-            document.documentElement.classList.toggle('dark-mode')
-            document.querySelector('.service-title').classList.toggle('invert')
+// Add active class to the current button (highlight it)
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", function () {
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach((link) => link.classList.remove("active"));
+    this.classList.add("active");
+  });
+});
 
-            // document.querySelectorAll('.inverted').forEach(result)=>{
-            //     result.classList.toggle('invert')
-            // }
-        }
-    }
+document.onkeypress = (e) => {
+  e = e || window.event;
+  if (e.keyCode == 13) {
+    document.documentElement.classList.toggle("dark-mode");
+    document.querySelector(".experience-title").classList.toggle("invert");
+
+    // document.querySelectorAll('.inverted').forEach(result)=>{
+    //     result.classList.toggle('invert')
+    // }
+  }
+};

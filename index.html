@@ -4,210 +4,218 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#F81E8B">
+    <meta name="theme-color" content="#F81E8B" />
+    <meta name="description"
+        content="Portfolio of Ramu Bugudi, a Senior Frontend Engineer with expertise in JavaScript, TypeScript, React and mobile app development." />
     <link rel="stylesheet" href="./main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./background.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <title>Portfolio | Ramu</title>
 </head>
 
 <body>
+    <!-- Background -->
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     <div class="landing">
-        <div class="navbar">
+        <!-- Navbar -->
+        <nav class="navbar">
             <div class="logo">
-                <a href="#">R</a>
+                <a id="logo" onclick="resetActive()" href="#">RB._</a>
             </div>
-            <div class="nav-links">
-                <li><a href="#about" class="nav-link">ABOUT</a></li>
-                <li><a href="#services" class="nav-link">SERVICES</a></li>
-                <li><a href="#work" class="nav-link">WORK</a></li>
-                <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
-            </div>
-            <a href="javascript:void(0);" class="menu" onclick="showMenu()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </a>
-        </div>
-        <div class="landing-container">
 
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#footer" class="nav-link">Connect</a></li>
+            </ul>
+            <button class="menu" onclick="showMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </nav>
+
+        <!-- Landing section -->
+        <section class="landing-container">
             <div class="landing-content">
-                <div class="hello">Hello</div>
-                <div class="iam">I'm Ramu</div>
-                <div class="desc">Freelance Web & Mobile Application Developer</div>
-                <button class="hire-me-btn"><a href="#footer">Hire Me!</a></button>
+                <h2 class="iam">Ramu</h2>
+                <p class="desc">Software Engineer, Front end, back end & Full stack</p>
                 <div class="contact">
-                    <img src="./images/mail.png" alt="">
-                    <a href="mailto: ramubugudi4@gmail.com">
-
-                        <div class="email">
-                            <p style="opacity: 0.7">Let's get in touch!</p>
-                            <h5>ramubugudi4@gmail.com</h5>
-                        </div>
-                    </a>
+                    <img src="https://cdn-icons-png.flaticon.com/128/17637/17637909.png" alt="Email icon" />
+                    <a href="mailto:ramubugudi4@gmail.com" class="email">
+                        <p>Have a question or want to work together?</p>
+                        <h6>Email me and let's start a conversation!</h6>
+                    </a>                    
                 </div>
             </div>
-            <div class="landing-image">
-                <img id="landing-svg" src="./images//landing-image.svg" />
-            </div>
-        </div>
+        </section>
+
 
         <!-- About Section -->
-        <div class="about-container " id="about">
-            <div class="about-title ">
-                About Me
-            </div>
-            <div class="about-content ">
-                I am a self-taught software developer. I am an Indian based <b>Web</b> and <b>Mobile</b> application
-                Developer
-                with over 1.5 year of experience. I am also comfortable in working with different kinds of projects
-                which
-                are challenging to do. I do have over 1 year experience in doing Freelancing.
+        <section class="about-container" id="about">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-content">
+                Hello! I’m Ramu, a <strong>Senior Frontend Engineer</strong> based in India with
+                over 3.6 years of experience in <strong>Full Stack Development</strong>. My journey in technology began
+                with a deep curiosity for
+                how things work, which evolved into a passion for creating innovative
+                solutions.
+            </p>
+            <p class="about-content">
+                My expertise lies in <strong>JavaScript</strong>, <strong>TypeScript</strong> and
+                <strong>React</strong>, and I’m skilled in developing dynamic and user-centric
+                applications. I’ve successfully managed and delivered various
+                projects, including freelancing for over a year where I tackled
+                diverse challenges and built tailored solutions for clients.
+            </p>
+            <p class="about-content">
+                I am currently focusing on building
+                scalable and high-performance applications. My ongoing learning
+                efforts are centered around <b>Web Performance & Optimization</strong> to
+                    ensure that applications are not only functional but also efficient
+                    and fast.
+            </p>
+            <p class="about-content">
+                My approach combines technical expertise with a keen eye for design,
+                allowing me to craft intuitive and engaging user interfaces. I’m
+                always eager to tackle new challenges and collaborate with others to
+                create impactful software solutions.
+            </p>
+            <a href="https://drive.google.com/file/d/1oI4Sj8f5W9j-EmSBLtsrpAOimuKP9aUj/view?usp=sharing"
+                download class="hire-me-btn">Download Resume</a>
+        </section>
 
+        <!-- Expertise Section -->
+        <section class="experience-container" id="expertise">
+            <h2 class="section-title">My Expertise</h2>
+            <p class="experience-content">
+              I specialize in building robust and scalable web applications, focusing on both frontend and backend technologies. My expertise lies in developing dynamic user interfaces, efficient server-side logic, and full-stack solutions using modern frameworks and libraries. I am committed to writing clean, maintainable code and delivering high-quality products that provide an exceptional user experience.
+            </p>
+            <div class="experiences-cards">
+              <div class="experience-card">
+                <h3 class="skew-title">Frontend (React)</h3>
+              </div>
+              <div class="experience-card">
+                <h3 class="skew-title">Backend (Node & Nest JS)</h3>
+              </div>
+              <div class="experience-card">
+                <h3 class="skew-title">Full Stack (MERN)</h3>
+              </div>
             </div>
-            <a href="https://docs.google.com/document/d/1FRsiJgcWn0FqW7gULoXIOWpw4aUYWOJloqpC-MdqEww/export?format=pdf "
-                download class="hire-me-btn ">Download CV</a>
-        </div>
-
-        <!-- Services Section -->
-        <div class="service-container " id="services">
-            <div class="service-title ">
-                Services
-            </div>
-            <div class="service-content ">
-                Here are some of the services I offer for my customers and clients.
-            </div>
-            <div class="services-cards ">
-                <div data-tilt class="service-card ">
-                    <!-- <img width="100% " height="300px " style="z-index: -1 " src="./images/web-mockup.jpg " alt=" "> -->
-                    <h3 class="skew-title ">Website's</h3>
-                </div>
-                <div data-tilt class="service-card ">
-                    <h3 class="skew-title "> Mobile App's</h3>
-                </div>
-                <div data-tilt class="service-card ">
-                    <h3 class="skew-title ">UI Design's</h3>
-                </div>
-            </div>
-        </div>
+          </section>
+          
 
         <!-- Work Section -->
-        <div class="service-container " id="work">
-            <div class="service-title ">
-                My Works
+        <section class="experience-container" id="work">
+            <h2 class="section-title">My Works</h2>
+            <p class="experience-content">
+                Here are some of my featured projects. Feel free to explore them on GitHub or get in touch through the
+                contact section below.
+            </p>
+            <div class="experiences-cards">
+                <div class="card">
+                    <h4 class="project-heading">Your NLP-to-SQL Assistant</h4>
+                    <p class="project-desc">
+                        Meet your NLP-to-SQL assistant. Utilizing OpenAI's LLM, it seamlessly translates natural
+                        language queries into SQL commands, executes them on your database, and swiftly delivers
+                        accurate results. Simplify your database interactions effortlessly.
+                    </p>
+                    <a href="https://github.com/your-github-username/nlp-to-sql-assistant" target="_blank"
+                        class="hire-me-btn-1"
+                        aria-label="Read more about the NLP-to-SQL Assistant project on GitHub">Read More</a>
+                </div>
+                <div class="card">
+                    <h4 class="project-heading">Quiz System</h4>
+                    <p class="project-desc">
+                        A secure quiz app with user authentication, intuitive quiz management, and engaging features
+                        like randomized questions, timers, and progress tracking. Includes quiz history, leaderboard,
+                        social sharing, and analytics for a seamless user experience.
+                    </p>
+                    <a href="https://github.com/your-github-username/quiz-system" target="_blank" class="hire-me-btn-1"
+                        aria-label="Read more about the Quiz System project on GitHub">Read More</a>
+                </div>
+                <div class="card">
+                    <h4 class="project-heading">Food Ordering Application</h4>
+                    <p class="project-desc">
+                        A full-fledged food ordering application featuring authentication, cart management, payment
+                        processing, and various filters. Built using React, Redux, Firebase, and JavaScript for a rich
+                        user experience.
+                    </p>
+                    <a href="https://github.com/your-github-username/food-ordering-app" target="_blank"
+                        class="hire-me-btn-1"
+                        aria-label="Read more about the Food Ordering Application project on GitHub">Read More</a>
+                </div>
             </div>
-            <div class="service-content ">
-                Here are some of my work's. If you do like my work click on the project and hit the star button in
-                github or feel free to drop a mail or message.You can find my contact information in the contact section
-                below.
-            </div>
-            <div class="services-cards ">
-                <div class="card ">
-                    <h4 class="project-heading ">INDIFOOD</h4>
-                    <p class="project-desc ">An online Restaurant application similar to some of the applications out
-                        there for example Swiggy and Zomato.
-                        There are lot of features implemented in this project.
-                    </p>
-                    <button class="hire-me-btn-1 "><a style="text-decoration: none; color: black;"
-                            href="https://github.com/bugudiramu/indifood" target="_blank">Read More</a></button>
-                </div>
-                <div class="card ">
-                    <h4 class="project-heading-1 ">E-BAZAAR</h4>
-                    <p class="project-desc ">A simple and elegant e-commerce application made using Flutter and
-                        Firebase.If you want to know about the project click Read More! button.Most liked repo of mine.
-                    </p>
-                    <button class="hire-me-btn-1 "><a style="text-decoration: none; color: black;"
-                            href="https://github.com/bugudiramu/e-bazaar" target="_blank">Read More</a></button>
-                </div>
-                <div class="card ">
-                    <h4 class="project-heading-2 ">QUIZ APP</h4>
-                    <p class="project-desc ">An Online examination system which is having lot of features like different
-                        dashboards for Admin, Students and for the User as well.
-                        It's still ongoing.
-                    </p>
-                    <button class="hire-me-btn-1 ">Read More </button>
-                </div>
+        </section>
 
-                <!-- <div class="card ">
-                    <h4 class="project-heading ">PROJECT 1</h4>
-                    <p class="project-desc ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-                        exercitationem debitis reiciendis, commodi inventore harum iure consequuntur. Explicabo, esse
-                        perspiciatis?
-                    </p>
-                    <button class="hire-me-btn-1 ">Read More</button>
-                </div>
-                <div class="card ">
-                    <h4 class="project-heading-1 ">PROJECT 2</h4>
-                    <p class="project-desc ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-                        exercitationem debitis reiciendis, commodi inventore harum iure consequuntur. Explicabo, esse
-                        perspiciatis?
-                    </p>
-                    <button class="hire-me-btn-2 ">Read More</button>
-                </div>
-                <div class="card ">
-                    <h4 class="project-heading-2 ">PROJECT 3</h4>
-                    <p class="project-desc ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
-                        exercitationem debitis reiciendis, commodi inventore harum iure consequuntur. Explicabo, esse
-                        perspiciatis?
-                    </p>
-                    <button class="hire-me-btn-3 ">Read More</button>
-                </div> -->
-            </div>
-        </div>
-        <!-- Experience Section -->
-        <div class="service-container " id="experience">
-            <div class="service-title ">
-                Experience
-            </div>
-            <div class="service-content ">
-                My expericences as a Web and Mobile Application Developer.
-            </div>
-            <div class="services-cards " style="display: flex;justify-content: center; ">
-                <div class="experience-card ">
-                    <h4 class="project-heading-1 ">Flutter & React Native Developer</h4>
-                    <p class="project-desc ">1 Year expericence in Cross-Platform mobile app development using both
-                        Flutter and React Native world 💖.
-                    </p>
-                </div>
-                <div class="experience-card ">
-                    <h4 class="project-heading-1 ">React Web Developer</h4>
-                    <p class="project-desc ">From my 3rd year of graduation I have been working on this technology which
-                        is cool.
-                        I have done some of my projects using React JS ✌.
-                    </p>
-                </div>
+        <hr style="margin-top: 3rem; background-color: #d6d6d6; border-width: 0.5px" />
 
-                <div class="experience-card ">
-                    <h4 class="project-heading-1 ">Adobe XD Explorer</h4>
-                    <p class="project-desc ">I do have my personal experience in Adobe XD because for my every personal
-                        project I will be designing the whole idea into visual design using XD 😊.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <hr style="margin-top:3rem;background-color: rgb(214, 214, 214);border-width: 0.5px;" />
-        <!-- Contact Section -->
-        <div class="footer" id="footer">
+        <!-- Footer Section -->
+        <footer class="footer" id="footer">
             <div class="social">
                 <a href="http://github.com/bugudiramu/" target="_blank">
-                    <img src="./images/github.png" alt="Github" />
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968866.png" alt="GitHub Profile" />
                 </a>
                 <a href="https://www.linkedin.com/in/ramu-bugudi-2a5a5a161/" target="_blank">
-                    <img src="./images/linkedin.png" alt="Linkedin" />
+                    <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="LinkedIn Profile" />
                 </a>
-                <a href="mailto: ramubugudi4@gmail.com">
-                    <img src="./images/mail.png" alt="">
+                <a href="https://dev.to/bugudiramu">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5969/5969113.png" alt="Dev.to Profile" />
+                </a>
+                <a href="mailto:ramubugudi4@gmail.com">
+                    <img src="https://cdn-icons-png.flaticon.com/128/17637/17637909.png" alt="Email Ramu" />
                 </a>
             </div>
-            <p>Designed & Coded by me <a style="text-decoration: none;color: black;" href="http://github.com/bugudiramu/">&lt/👩🏼‍💻></a>.</p>
-        </div>
-
+            <p>
+                Designed & Coded by me
+                <a href="http://github.com/bugudiramu/" style="text-decoration: none; color: #a6adbb">&lt/👩🏼‍💻></a>
+            </p>
+        </footer>
     </div>
-    </div>
-    <script src="./main.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-
-    <!-- https://github.com/gijsroge/tilt.js -->
-    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js "></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
