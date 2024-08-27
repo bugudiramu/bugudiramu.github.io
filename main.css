@@ -114,23 +114,8 @@ body {
   height: calc(100vh - 100px);
 }
 
-/* .landing-content .iam {
-  font-size: 10vw;
-  text-transform: uppercase;
-  letter-spacing: 2.2px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(
-    to right,
-    var(--primaryColor),
-    var(--primaryColorOrange),
-    #f9f871
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-} */
-
 .landing-content .iam {
-  font-size: 10vw;
+  font-size: 15vmin;
   text-transform: uppercase;
   letter-spacing: 2.2px;
   font-family: Arial, Helvetica, sans-serif;
@@ -157,11 +142,7 @@ body {
   }
 }
 
-
 .landing-content .desc {
-  /* font-weight: 500;
-  padding-bottom: 1rem;
-  opacity: 0.7; */
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 2.2px;
@@ -237,7 +218,7 @@ body {
 .section-title {
   color: #00a96e;
   font-weight: bolder;
-  font-size: 70px;
+  font-size: 8vmin;
   padding-bottom: 5rem;
   letter-spacing: 5px;
   text-decoration: underline;
@@ -271,8 +252,6 @@ body {
 }
 
 .experience-title {
-  /* color: var(--primaryColor); */
-  /* text-shadow: 5px 0 var(--primaryColor); */
   font-weight: bolder;
   font-size: 70px;
   padding-bottom: 5rem;
@@ -282,8 +261,6 @@ body {
 .experience-content {
   padding-bottom: 2rem;
   text-align: center;
-  line-height: 1.5rem;
-  letter-spacing: 1px;
 }
 
 .experiences-cards {
@@ -385,4 +362,91 @@ body {
   100% {
     transform: scale(1.1);
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+    padding: 0 5%;
+  }
+  .navbar {
+    display: none;
+  }
+  .landing-content .iam {
+    font-size: 25vmin;
+  }
+  .landing-content,
+  .about-container,
+  .experience-container {
+    min-height: 100vh;
+    text-align: center;
+  }
+  .about-container,
+  .experience-container {
+    height: 100%;
+  }
+  .experience-container {
+    margin-bottom: 5rem;
+  }
+  .section-title {
+    padding-bottom: 2rem;
+  }
+  .about-content,
+  .experience-content {
+    text-align: justify;
+  }
+  .contact .email {
+    margin-left: 8px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    padding: 0 5%;
+  }
+  .navbar {
+    display: flex;
+  }
+  .landing-content .iam {
+    font-size: 25vmin;
+  }
+  .landing-content,
+  .about-container,
+  .experience-container {
+    height: 100vh;
+    text-align: center;
+  }
+  .about-container,
+  .experience-container {
+    height: 100%;
+  }
+  .experience-container {
+    margin-top: 5rem;
+  }
+  .section-title {
+    padding-bottom: 2rem;
+  }
+  .about-content,
+  .experience-content {
+    text-align: justify;
+  }
+  .contact .email {
+    margin-left: 8px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
