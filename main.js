@@ -3,15 +3,6 @@ function showMenu() {
   navLinks.classList.toggle("active");
 }
 
-function resetActive() {
-  const logo = document.querySelector("#logo");
-  logo.addEventListener("click", function () {
-    document
-      .querySelectorAll(".nav-links a")
-      .forEach((link) => link.classList.remove("active"));
-  });
-}
-
 // Add active class to the current button (highlight it)
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", function () {
@@ -21,6 +12,16 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     this.classList.add("active");
   });
 });
+
+function resetActive() {
+  const logo = document.querySelector("#logo");
+  logo.addEventListener("click", function () {
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach((link) => link.classList.remove("active"));
+  });
+}
+resetActive();
 
 document.onkeypress = (e) => {
   e = e || window.event;

@@ -422,7 +422,7 @@ body {
   .landing-content,
   .about-container,
   .experience-container {
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
   }
   .about-container,
