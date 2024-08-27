@@ -72,11 +72,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  left: 0;
   z-index: 1;
   background: var(--backgroundColor);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
 }
 
 .nav-links {
@@ -412,9 +415,6 @@ body {
   body {
     overflow-x: hidden;
     padding: 0 5%;
-  }
-  .navbar {
-    display: flex;
   }
   .landing-content .iam {
     font-size: 25vmin;
